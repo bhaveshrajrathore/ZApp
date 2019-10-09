@@ -17,7 +17,7 @@ job('ZullApp-github-project') {
         shell('./npm build')
     }
     publishers {
-        archiveArtifacts 'build/libs/*.App.js'
+        
         archiveJunit 'build/test-results/**/*.xml'
     }
 }
