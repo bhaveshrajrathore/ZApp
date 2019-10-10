@@ -32,7 +32,7 @@ pipeline{
       steps{
          script {
             docker.withRegistry( '', registryCredential ) {
-	    dockerImage.push("HappyaapV${env.BUILD_NUMBER}")
+	    dockerImage.push("ZullApp1${env.BUILD_NUMBER}")
             //dockerImage.push("ZullApp")
           }
         }
