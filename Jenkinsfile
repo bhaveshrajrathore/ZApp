@@ -1,7 +1,7 @@
 pipeline{
      environment {
      registry = "rajbhavesh"
-     registryCredential = "DockerHub"
+     registryCredential = "Docker"
      dockerImage = "ZullApp"
   }
    agent { label 'DockerHost' }
