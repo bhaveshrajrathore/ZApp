@@ -9,7 +9,6 @@ pipeline{
         skipDefaultCheckout()
     }
 	parameters { 
-	gitParameter branchFilter: 'origin/(.*)', defaultValue: 'master', name: 'BRANCH', type: 'PT_BRANCH'
 	booleanParam( name: 'Bulild Docker image', defaultValue: true, description: 'Build the Docker Image')
 	booleanParam( name: 'Deploy in GKE ', defaultValue: false, description: 'Deploy in google kubernetes cloud')
 	
