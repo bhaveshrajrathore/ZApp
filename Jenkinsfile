@@ -1,6 +1,6 @@
 pipeline{
      environment {
-     registry = "rajbhavesh"
+     registry = "rajbhavesh/demo"
      registryCredential = "Docker"
      dockerImage = "ZullApp"
   }
