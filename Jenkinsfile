@@ -10,7 +10,7 @@ pipeline{
     }
 	parameters { 
 	booleanParam( name: 'Bulild Docker image', defaultValue: true, description: 'Build the Docker Image')
-	booleanParam( name: 'Deploy in GKE ', defaultValue: false, description: 'Deploy in google kubernetes cloud')
+	booleanParam( name: 'Deploy in Kubernetes ', defaultValue: false, description: 'Deploy in google kubernetes cloud')
 	
 	}
     stages{
